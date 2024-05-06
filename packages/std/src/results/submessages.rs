@@ -167,7 +167,7 @@ pub struct Reply {
     pub payload: Binary,
     /// The amount of gas used by the submessage,
     /// measured in [Cosmos SDK gas](https://github.com/CosmWasm/cosmwasm/blob/main/docs/GAS.md).
-    pub gas_used: u64,
+    pub gas_used: Option<u64>,
     pub result: SubMsgResult,
 }
 
